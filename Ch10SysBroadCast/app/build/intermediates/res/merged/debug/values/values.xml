@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/Users/Rui/Documents/class/ch10/Ch10SysBroadCast/app/src/main/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- From: file:/Users/Rui/Documents/class/ch10/Ch10SysBroadCast/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="app_name">Ch10系統廣播</string>
+    <string name="btPtEnd">結束</string>
+    <string name="tvPtHead">正在等候廣播通知，是否已更改系統日期..</string>
+    <!-- From: file:/Users/Rui/Documents/class/ch10/Ch10SysBroadCast/app/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="AppBaseTheme" parent="android:Theme.Light"/>
+    <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        <!-- API 14 theme customizations can go here. -->
+    </style>
+</resources>
