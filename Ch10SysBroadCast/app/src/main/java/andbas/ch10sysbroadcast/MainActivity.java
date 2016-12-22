@@ -5,9 +5,7 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
-import android.os.BatteryManager;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -16,6 +14,7 @@ import android.widget.TextView;
 
 public class MainActivity extends Activity {
 	private Button btEnd;
+    private TextView tvBattery;
     /** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -25,10 +24,9 @@ public class MainActivity extends Activity {
         this.registerReceiver(batteryInfoRecv, new IntentFilter(Intent.ACTION_BATTERY_CHANGED));
     }
     private void buildViews() {
+        tvBattery = (TextView)findViewById(R.id.tvIdbatteryLevel);
     	btEnd = (Button) this.findViewById(R.id.btIdEnd);
     	btEnd.setOnClickListener(btEndListener);
-
-
     }
         
     private OnClickListener btEndListener = 
@@ -44,6 +42,7 @@ public class MainActivity extends Activity {
             int level = intent.getIntExtra("level",0);
             ImageView ivBatteryIcon = (ImageView)findViewById(R.id.ivIdBatteryIcon);
             ivBatteryIcon.getDrawable().setLevel(level);
+            tvBattery.setText("目前電量："+level+"%");
         }
     };
 }
