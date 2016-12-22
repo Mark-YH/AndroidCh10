@@ -15,10 +15,18 @@ public final class R {
         public static final int activity_vertical_margin=0x7f040001;
     }
     public static final class drawable {
-        public static final int ic_launcher=0x7f020000;
+        public static final int battery10=0x7f020000;
+        public static final int battery100=0x7f020001;
+        public static final int battery20=0x7f020002;
+        public static final int battery30=0x7f020003;
+        public static final int battery50=0x7f020004;
+        public static final int battery75=0x7f020005;
+        public static final int battery_list=0x7f020006;
+        public static final int ic_launcher=0x7f020007;
     }
     public static final class id {
         public static final int btIdEnd=0x7f070000;
+        public static final int ivIdBatteryIcon=0x7f070001;
     }
     public static final class layout {
         public static final int main=0x7f030000;

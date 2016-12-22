@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
-	<TextView 
+	<TextView
 	    android:layout_width="match_parent"  
 	    android:layout_height="wrap_content" 
 	    android:text="@string/tvPtHead"
@@ -15,4 +15,10 @@
 	    android:layout_width="wrap_content"
 	    android:layout_height="wrap_content"
 	    android:text="@string/btPtEnd" />
+
+	<ImageView
+		android:src="@drawable/battery_list"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/ivIdBatteryIcon" />
 </LinearLayout>
